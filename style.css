@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    background-color: #0B0B0B;
+    width: 100vw;
+    height: 2000px;
+    margin-bottom: 300px;
+}
+
+/* 헤더 스타일링 */
+header{
+    background-color: #0B0B0B;
+
+    display: flex;
+    position: fixed;
+    top: 0px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 100vw;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+
+    z-index: 0;
+}
+
+header.scrolled{
+    border-bottom: solid 1px rgb(105, 105, 105);
+    box-shadow:  0 0 10px rgba(158, 158, 158,0.5);
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    margin-left: 30vw;
+}
+
+header img{ width: 100px; height: 30px;}
+
+li{
+    list-style: none;
+}
+
+li:hover{
+    font-weight: bold;
+    transition: all ease 0.18s;
+}
+
+#maintitle{
+    font-size: 40px;
+    font-weight: bold;
+    width: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px white;
+}
+
+div.progress-bar{
+    width: 100px;
+    height: 10px;
+    background-color: red;
+    position: fixed;
+    z-index: 100;
+}
+
+.buttonline{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 34px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    transition: ease 0.18s;
+}
+
+button:hover{
+    background-color: rgb(91, 13, 13);
+    transition: ease 0.18s;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+}
+
+.info1{ color:  rgb(163, 163, 163);}
+
+.info2{
+    width: 450px;
+    padding-top: 20px;
+}
+
+
+/* 텍스트 스타일링 */
+
+img{ height: 50vh;}
+.text{ padding-left: 20px;
+height: 50vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;}
+
+h1{ font-size: 64px;}
+
+h2{ font-size: 36px;}
+
+span{ color: rgb(163, 163, 163);}
+
+
+/* classList add */
+
+.middle{
+    color: black;
+    transition: ease 0.3s;
+}
